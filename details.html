@@ -1,0 +1,137 @@
+<html>
+<body bgcolor="Lightseagreen">
+    <style>
+        .main{
+            background-color:cyan;
+            width: 550px;
+            height: 580px;	
+            margin: 150px 0 0 350px;
+            padding: 10px;
+        }
+        .cntrl{
+            width: 95%;
+            height: 30px;
+            padding:10px;
+        }
+        .spndiv{
+            width: 140px;
+            height: 30px;
+            float:left;
+        }
+        .lbl{
+            font-family:Verdana, Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        .txt{
+            border: 1px solid #000;
+            width: 380px;
+            height: 30px;
+            padding-left: 7px;
+            float:left;
+        }
+    </style>
+    <script>
+        function validate(f)
+        {
+            var e=document.getElementById("err");
+            if(f.account_number.value=="")
+            {
+                e.innerHTML="Please input account number";
+                f.account_number.focus();
+                return false;
+            }
+           		   else if(f.email.value=="")
+            {
+                e.innerHTML="Please input emailid";
+                f.email.focus();
+                return false;
+            }
+					   else if(f.password.value=="")
+            {
+                e.innerHTML="Please input password";
+                f.password.focus();
+                return false;
+            }
+					   else if(f.bankname.value=="")
+            {
+                e.innerHTML="Please input the name of bank";
+                f.bankname.focus();
+                return false;
+            }
+					   else if(f.amount.value=="")
+            {
+                e.innerHTML="Please input the amount";
+                f.amount.focus();
+                return false;
+            }
+        }
+    </script>
+    <form action="confirm.html" onsubmit="return validate(this) ">
+        <div class="main">
+		<center><h1 style="color:blue">Customer's Details</h1></center>
+
+			            <div class="cntrl">
+                <div class="spndiv">
+                    <span class="lbl">Customer's name</span>
+                </div>
+                <input type="text" name="cname" size="30" class="txt" placeholder="Enter your name">
+            </div>
+            <div class="cntrl">
+                <div class="spndiv">
+                    <span class="lbl">Email</span>
+                </div>
+                <input type="email" name="email" size="30" class="txt" placeholder="Enter your emailid">
+            </div>
+            <div class="cntrl">
+                <div class="spndiv">
+                    <span class="lbl">Password</span>
+                </div>
+                <input type="password" name="password" size="30" class="txt" placeholder="Enter your password">
+            </div>
+			<div class="cntrl">
+                <div class="spndiv">
+                    <span class="lbl">Type of cake</span>
+                </div>
+                <input type="text" name="type" size="30" class="txt" placeholder="Enter the type of cake">
+            </div>
+			            <div class="cntrl">
+                <div class="spndiv">
+                    <span class="lbl">Name of Cake</span>
+                </div>
+                <input type="text" name="cakename" size="30" class="txt" placeholder="Enter your cake's name">
+            </div>
+			            <div class="cntrl">
+                <div class="spndiv">
+                    <span class="lbl">Weight</span>
+                </div>
+                <input type="text" name="weight" size="30" class="txt" placeholder="Enter the weight of cake">
+            </div>
+			 <div class="cntrl">
+                <div class="spndiv">
+                    <span class="lbl">Address</span>
+                </div>
+                <input type="text" name="address" size="30" class="txt" placeholder="Enter your address">
+            </div>
+			 <div class="cntrl">
+                <div class="spndiv">
+                    <span class="lbl">City</span>
+                </div>
+                <input type="text" name="city" size="30" class="txt" placeholder="Enter your city">
+            </div>
+			 <div class="cntrl">
+                <div class="spndiv">
+                    <span class="lbl">PIN CODE</span>
+                </div>
+                <input type="text" name="pin" size="30" class="txt" placeholder="Enter your pin code">
+            </div>
+            <div class="cntrl" style="height: 15px;text-align:center">
+                <input type="submit" name="sbt" value="Next" style="width: 120px;height: 25px;">
+                            </div>
+
+            <div class="cntrl" style="height: 10px;">
+                <span id="err" style="color:#FF0000"></span>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

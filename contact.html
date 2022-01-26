@@ -1,0 +1,190 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>The Bread Parlour :contacts</title>
+		<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Armata|Julius+Sans+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/craftyslide.css" />
+		<SCRIPT src="js/jquery.min.js" type=text/javascript></SCRIPT>
+ <style>
+      #map {
+        width: 950px;
+        height: 400px;
+      }
+    </style>
+		</head>
+	<body>
+		<!--  start-wrap -->
+		<div class="wrap">
+			<!--  start-Header -->
+			<div class="header">
+				<!--  start-logo -->
+							<div class="contact-info">
+					<ul>
+						<li>Order Delivery</li>
+						<li>+918765696517</li>
+						<li>MON. - FRI., 8 AM- 8 PM EST </li>
+					    </ul>
+				</div>
+				<div class="logo">
+					<a href="dex.html"><img src="images/logo.png" alt=""/></a>
+				</div>
+				
+				<!--End-logo -->
+				<div class="clear"> </div>
+				<!--TOP-NAV-->
+				<nav class="menu" role='navigation'>
+  <ol>
+    <li class="menu-item"><a href="dex.html">Home</a></li>
+    <li class="menu-item"><a href="about.html">About</a></li>
+    <li class="menu-item" aria-haspopup="true">
+      <a href="#0">Products</a>
+      <ol class="sub-menu" aria-label="submenu">
+        <li class="menu-item"><a href="products.html">Wedding cakes</a></li>
+         <li class="menu-item"><a href="Birthday cakes.html">Birthday cakes</a></li>
+          <li class="menu-item"><a href="Birthday cakes.html">All purpose cakes</a></li>
+	        <li class="menu-item"><a href="Miniature cakes.html">Miniature cakes</a></li>
+	        <li class="menu-item"><a href="Miniature cakes.html">Cupcakes</a></li>
+	      <li class="menu-item"><a href="Miniature cakes.html">Eggless cakes</a></li>
+		
+      </ol>
+    </li>
+    <li class="menu-item" aria-haspopup="true">
+      <a href="Sign up.html">Services</a>
+      <ol class="sub-menu" aria-label="submenu">
+        <li class="menu-item"><a href="index.php">Sign in</a></li>
+        <li class="menu-item"><a href="signup.php">Sign Up</a></li>
+        
+      </ol>
+    </li>
+    <li class="menu-item"><a href="contact.html">Contact</a></li>
+  </ol>
+</nav>
+			
+				<!--END-TOP-NAV-->
+			<div class="clear"> </div>
+			<!--image-slider-->
+			<div id="slideshow">
+	        <ul>
+	          <li>
+	            <img src="images/slide2.jpg" alt="" title="Lorem ipsum dolor sit amet. " />
+	          </li>
+	          
+	          <li>
+	            <img src="images/slide1.jpg" alt="" title="labore et dolore magna aliqua. " />
+	          </li>
+	          
+	          <li>           
+	            <img src="images/slide3.jpg" alt="" title="labore et dolore magna aliqua. " />
+	          </li>
+	          
+	          <li>           
+	            <img src="images/slide2.jpg" alt="" title="Lorem ipsum dolor sit amet. " />
+	          </li>
+	          
+	          <li>           
+	            <img src="images/slide1.jpg" alt="" title="Lorem ipsum dolor sit ametsed do eiusmod tempor . " />
+	          </li>	                         
+	        </ul>
+      </div>   
+      
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+      <script src="js/craftyslide.min.js"></script>
+      <script src="js/jquery-1.6.2.min.js"></script>
+
+	  
+      
+      <script>
+        $("#slideshow").craftyslide();
+      </script> 
+      <div class="clear"> </div>  
+      <!--End-image-slider-->
+        <!--Start-contact-->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+
+   <script type="text/javascript">
+	$(document).ready(function() {
+		$('.ajax-map').load('/home/ajax-map');
+	});
+   </script>
+
+  <br>
+  <div   id="map"></div> <br>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat:26.5013590 , lng: 80.2662930},
+          zoom: 15
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+   
+	  
+	  <form class="form">
+	  
+	<h4>Contact-US</h4>
+	<p class="name">
+		<input type="text" name="name" id="name" />
+		<label for="name">Name</label>
+	</p>
+
+	<p class="email">
+		<input type="text" name="email" id="email" />
+		<label for="email">E-mail</label>
+	</p>
+
+	<p class="web">
+		<input type="text" name="web" id="web" />
+		<label for="web">Passwords</label>
+	</p>
+
+	<p class="text">
+		<textarea name="text"> </textarea>
+	</p>
+
+	<p class="submit">
+		<input type="submit" value="Send" />
+		
+	</p>
+    <!--<div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat:26.4957800 , lng: 80.2627970},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>	-->
+</form>
+      </div>
+      <!--End-contact-->
+     <div class="clear"> </div>
+		<div class="footer">
+			<div class="wrap">
+      		<div class="footer-nav"> 
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+			</div>
+			<div class="copy-right">
+				<p>© 2021 All rights Reserved | Design by uDAY</p>
+			</div>
+			</div>
+      	</div>
+	</body>
+</html>
+
